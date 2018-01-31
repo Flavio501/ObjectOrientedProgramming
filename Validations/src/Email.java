@@ -7,7 +7,7 @@ public class Email extends MyFields{
 			this.Email = email;
 		}
 		else {
-			System.out.println("Corregir formato");
+			System.out.println("Corregir formato de email");
 		}
 	}
 	

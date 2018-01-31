@@ -1,9 +1,12 @@
-
 public class EmailType implements ValidateField{
 	
 	public boolean validate(String hex) {
-		matcher = pattern.matcher(hex);
-		return matcher.matches();
+		if(hex.contains("@@")) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 	
 }

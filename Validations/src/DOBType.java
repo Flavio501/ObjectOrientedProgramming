@@ -2,8 +2,7 @@
 public class DOBType implements ValidateField{
 
 	public boolean validate(String campo) {
-		if(campo) return true;
-		return false;
+		if(campo.contains("//")) return false;
+		else return true;
 	}
-
 }

@@ -8,7 +8,7 @@ public class Sex extends MyFields{
 			this.Sex = sex;
 		}
 		else{
-			System.out.println("Corregir Formato");
+			System.out.println("Corregir Formato de sexo");
 		}
 	}
 	public boolean validation(String sex) {

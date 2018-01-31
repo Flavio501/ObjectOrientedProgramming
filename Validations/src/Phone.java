@@ -1,14 +1,18 @@
 
 public class Phone extends MyFields{
-	private int PhoneNumber;
+	private String PhoneNumber;
 	
-	public Phone(ValidateField F, int phone) {
+	public Phone(ValidateField F, String phone) {
 		super(F);
-		this.PhoneNumber = phone;
+		if(validation(phone)) {
+			this.PhoneNumber = phone;
+		}
+		else {
+			System.out.println("Corregir formato de telefono");
+		}
 	}
-	
-	public boolean validation() {
-		return Field.validate(PhoneNumber);
+	public boolean validation(String phone) {
+		return Field.validate(phone);
 	}
 	
 }

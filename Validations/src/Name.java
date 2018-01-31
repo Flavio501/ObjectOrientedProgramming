@@ -10,7 +10,13 @@ public class Name extends MyFields{
 			this.Name = name;
 		}
 		else {
-			System.out.println("Corregir formato");
+			System.out.println("Corregir formato de nombre");
+		}
+	}
+	
+	public void setName(String name) {
+		if(validation(name)) {
+			this.Name=name;
 		}
 	}
 	
