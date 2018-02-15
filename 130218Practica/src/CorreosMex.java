@@ -34,7 +34,7 @@ public class CorreosMex extends Observable{
 			paq.setDelivered(true);
 		}
 		try {
-			TimeUnit.SECONDS.sleep(5);
+			TimeUnit.SECONDS.sleep(10);
 			packetChanged();
 		} catch (InterruptedException e) {
 			e.printStackTrace();

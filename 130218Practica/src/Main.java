@@ -6,7 +6,8 @@ public class Main {
 		DHL dhl = new DHL();
 		Fedex fedex = new Fedex();
 		CorreosMex cm = new CorreosMex();
-		
+		int contador =0;
+		while(contador<100000) {
 		Observer paco = new ClienteA(dhl);
 		dhl.regPack(paco);
 		dhl.regPack(paco);
@@ -21,7 +22,8 @@ public class Main {
 		cm.regPack(paco);
 		cm.regPack(paco);
 		cm.delivery();
-		
+		contador++;
+		}
 		
 	}
 
