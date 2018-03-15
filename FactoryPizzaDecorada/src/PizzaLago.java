@@ -20,7 +20,7 @@ public class PizzaLago extends PizzaStore{
 			c = new Adobada(c);
 			return c;
 		default:
-			return new PizzaDefault("pizzaLago",tipoPizza);
+			return new PizzaDefault("pizzaLago","Pizza chafa mas cara por no especificar");
 		}
 	}
 }

@@ -18,7 +18,7 @@ public class PizzaCetys extends PizzaStore{
 			c = new Aceituna(c);
 			return c;
 		default:
-			return new PizzaDefault("pizzaCetys",tipoPizza);
+			return new PizzaDefault("pizzaCetys","Pizza chafa mas cara por no especificar");
 		}
 	}
 }
