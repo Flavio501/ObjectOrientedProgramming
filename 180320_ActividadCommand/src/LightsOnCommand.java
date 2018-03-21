@@ -13,6 +13,4 @@ public class LightsOnCommand implements Command{
 		this.Light.apagarLuz();
 		
 	}
-	
-	
 }
