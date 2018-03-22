@@ -11,11 +11,13 @@ public class Invoker {
 	}
 	
 	public void buttonPress(Button but) {
-		but.pressButton();
+		//but.pressButton();
+		but.Com.execute();
 		lastButton = but;
 	}
 	
 	public void buttonUndo() {
-		lastButton.pressButton();
+		//lastButton.pressButton();
+		lastButton.Com.undo();
 	}
 }
